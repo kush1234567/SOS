@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738187616762",
+    "firebase_url": "https://women-safety-8375a.firebaseio.com",
+    "project_id": "women-safety-8375a",
+    "storage_bucket": "women-safety-8375a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738187616762:android:2fd4c44a8c238f3abc0443",
+        "android_client_info": {
+          "package_name": "com.bawp.womensafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738187616762-a8boftht6eutfkggr42vrp9ufpdro9ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bawp.womensafety",
+            "certificate_hash": "efa2c313e6ab5c37767c1f67827ddd2c4c81323f"
+          }
+        },
+        {
+          "client_id": "738187616762-l57it4q2208hai0h1gt2jq29naj270k3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGq78Jmo9VCtOvqBmVnSwcq8gEr5uN0N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738187616762-l57it4q2208hai0h1gt2jq29naj270k3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

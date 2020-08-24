@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profileimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/profileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#ED0EC5"/>
+
+        <LinearLayout
+              android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_contact_mail_black_24dp"
+                android:contentDescription="@string/todo" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:importantForAutofill="no"
+                android:cursorVisible="false"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:ignore="LabelFor" />
+       </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ED0EC5"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_contact"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_person"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/firstcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:hint="@string/name"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/firstcontactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:hint="@string/xxxxxxxxxx"
+            android:ems="10"
+            android:textSize="15sp"
+            android:layout_marginStart="22dp"
+            android:inputType="phone"
+            android:textColor="@android:color/darker_gray"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second_person"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/secondcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginStart="24dp"
+            android:ems="10"
+            android:textColor="@android:color/darker_gray"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/secondcontactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/xxxxxxxxxx"
+            android:textStyle="normal"
+            android:ems="10"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:textColor="@android:color/darker_gray"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third_person"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/thirdcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textStyle="normal"
+            android:ems="10"
+            android:textSize="15sp"
+            android:layout_marginStart="43dp"
+            android:textColor="@android:color/darker_gray"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/thirdcontactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/xxxxxxxxxx"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:ems="10"
+            android:textColor="@android:color/darker_gray"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/change"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn"
+                android:text="@string/change_password"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#ED0EC5"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/sa"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/save"
+            android:textSize="18sp"
+           android:gravity="center"
+            android:textColor="#ED0EC5"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+</ScrollView>

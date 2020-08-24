@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Interface">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme"
+        android:background="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+      </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/Emailnotverified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/email_not_verified"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/verifynow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="@string/verify_now"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Emailnotverified"/>
+
+    <ImageButton
+        android:id="@+id/sos"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:src="@drawable/sos"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+         <ImageButton
+             android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="@android:color/transparent"
+             android:src="@drawable/profile"
+             tools:ignore="NestedWeights"
+             android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/police"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/police"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:ignore="NestedWeights"
+            android:contentDescription="@string/todo" />
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+</LinearLayout>

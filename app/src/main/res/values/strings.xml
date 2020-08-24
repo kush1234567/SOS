@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Women safety</string>
+    <string name="login_button">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="loginCreate">CREATE ACCOUNT</string>
+    <string name="loginEmail">Email</string>
+    <string name="LoginPassword">Password</string>
+    <string name="CreateUsername">Username</string>
+    <string name="CreateEmail">Email</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="contactName">Contact Name</string>
+    <string name="save">SAVE</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="todo">TODO</string>
+    <string name="xxxxxxxxxx">xxxxxxxxxx</string>
+    <string name="phone_number">Phone number</string>
+    <string name="third_person">Third Person</string>
+    <string name="second_person">Second Person</string>
+    <string name="first_person">First Person</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="username">Username</string>
+    <string name="name">name</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="email_not_verified">EMAIL NOT VERIFIED</string>
+    <string name="verify_now">VERIFY NOW</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_map_api">AIzaSyD9INfGyMxiSxmHRrqc_EWVO9O2MSmj4QY</string>
+</resources>
